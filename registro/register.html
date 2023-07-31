@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Registro de cuenta</title>
+    <link rel="stylesheet" href="../estilos/styles.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../fotos/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../fotos/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="center">
+                <img src="../fotos/icono.png" alt="icono">
+            </div>
+            <div class="form register-form">
+                <h2>Registro</h2>
+                <form id="registerForm" onsubmit="return false;">
+                    <label for="username"><i class="fa fa-user"></i><input type="text" id="user" name="user"
+                            placeholder="Nombre de usuario" required></label>
+                    <label for="email"><i class="fa fa-envelope"></i><input type="email" id="email" name="email"
+                            placeholder="Correo electrónico" required></label>
+                    <label for="password"><i class="fa fa-lock"></i><input type="password" id="password" name="password"
+                            placeholder="Contraseña" required></label>
+                    <label for="password"><i class="fa fa-lock"></i><input type="password" id="passwordConfirm"
+                            placeholder="Confirmar contraseña" required></label>
+                    <button type="submit">Registrar cuenta</button>
+                    <div class="a-divider a-divider-break"></div>
+                    <a href="../login/login.html">
+                        <h5>Iniciar sesión</h5>
+                    </a>
+                    <section id="registrado"></section>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scriptregister.js"></script>
+</body>
+
+</html>
